@@ -31,10 +31,10 @@ def fibonacci(N):
         second_last = fibonacci(N - 2)
         memoization_dict[N] = last + second_last  # add the fibnonacci(N) value to the memoization dict for faster execution 
 
-    return last + second_last
+    return memoization_dict[N]  # OR we can also return (last + second_last)
 
 
-print(fibonacci(100))
+print(fibonacci(50))
 #  ------------------------------ RECURSION MEMOIZATION ----------------------------------
 
 
@@ -43,7 +43,7 @@ def fibonacci(N):
 
     fib_arr = []
 
-    for i in range(N):
+    for i in range(N + 1):
 
         if i == 0:
             fib_arr.append(i)
@@ -58,6 +58,6 @@ def fibonacci(N):
     return fib_arr[-1]
 
 
-# print(fibonacci(5))
+print(fibonacci(50))
 #  ----------------------------------- FOR LOOP -----------------------------------------
 
