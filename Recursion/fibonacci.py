@@ -1,5 +1,5 @@
 #  ----------------------------------- RECURSION -----------------------------------------
-def fibonacci(N):
+def fibonacci(N):  # T.C: O(2 ^ n), S.C: O(2 ^ n)
     if N == 0:
         return 0
     elif N == 1:
@@ -15,7 +15,7 @@ def fibonacci(N):
 #  ------------------------------ RECURSION MEMOIZATION ----------------------------------
 memoization_dict = {}  # store the fibonacci function call value for N
 
-def fibonacci(N):
+def fibonacci(N):  # T.C: O(N), S.C = O(N)
     global memoization_dict
 
     if N == 0:
@@ -31,7 +31,7 @@ def fibonacci(N):
         second_last = fibonacci(N - 2)
         memoization_dict[N] = last + second_last  # add the fibnonacci(N) value to the memoization dict for faster execution 
 
-    return memoization_dict[N]  # OR we can also return (last + second_last)
+    return memoization_dict[N]  # OR we can also return (last + second_last). Need to check which one is more optimized.
 
 
 print(fibonacci(50))
@@ -39,7 +39,7 @@ print(fibonacci(50))
 
 
 #  ----------------------------------- FOR LOOP -----------------------------------------
-def fibonacci(N):
+def fibonacci(N):  # T.C: O(N), S.C = O(N)
 
     fib_arr = []
 
