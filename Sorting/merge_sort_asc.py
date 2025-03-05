@@ -23,6 +23,7 @@ def merge(arr, start, mid, end):
         arr[i + start] = temp[i]
 
 
+# Best, Average, Worst T.C = O(N * (log N base to 2)), S.C = O(N) because of temp array while merging
 def mergre_sort(arr, start, end):
     # if start == end:  # base case 1
     #     return
