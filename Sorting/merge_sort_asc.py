@@ -24,7 +24,13 @@ def merge(arr, start, mid, end):
 
 
 def mergre_sort(arr, start, end):
-    if start < end:
+    # if start == end:  # base case 1
+    #     return
+
+    # if start >= end:  # base case 2
+    #     return
+
+    if start < end:  # base case 3
         mid = (start + end) // 2
 
         mergre_sort(arr, start, mid)  # 1st -> keep on dividing the left part of the array until it has only one element left
