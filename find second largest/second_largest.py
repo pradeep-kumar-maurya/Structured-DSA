@@ -1,7 +1,7 @@
 def find_second_largest(arr):
     max = float('-inf')
     second_max = float('-inf')
-    second_max_index = None
+    second_max_element_index = None
 
     if len(arr) == 1:
         return -1
@@ -15,9 +15,9 @@ def find_second_largest(arr):
 
         if (diff > second_max and arr[i] != max):
             second_max = diff
-            second_max_index = i
+            second_max_element_index = i
 
-    return arr[second_max_index]
+    return arr[second_max_element_index]
 
 
 arr = [1, 2, 4, 3, 2, 1]
