@@ -1,5 +1,7 @@
 '''
-This approach works for all +ve values, might work for cases with 0's and -ve nos but can't commit.
+This approach works for all +ve values.
+Might also work for cases with 0's.
+Might also work for -ve nos in some cases'.
 '''
 
 def max_sub_array(arr, k):
