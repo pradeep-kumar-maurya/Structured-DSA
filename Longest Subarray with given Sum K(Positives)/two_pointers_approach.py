@@ -15,7 +15,7 @@ def max_sub_array(arr, k):
 
         sum += arr[i]
 
-        if sum > k:
+        if sum > k:  # if sum > k, subtract from left and increment index until sum < k
             while index <= i and sum > k:
                 sum -= arr[index]
                 index += 1
