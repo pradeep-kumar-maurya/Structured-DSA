@@ -20,6 +20,10 @@ def max_subarray_sum(arr):
         elif sum < 0 and arr[i] > sum:
             sum = arr[i]
 
+        # continue if sum < 0 and arr[i] is < sum i.e. arr[i] is -ve
+        elif sum < 0 and arr[i] < sum:
+            continue
+
         # if sum > 0 and sum + arr[i] is also > 0 then add arr[i] to sum
         else:
             sum += arr[i]
